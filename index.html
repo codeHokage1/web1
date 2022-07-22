@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive website</title>
+
     <link rel="stylesheet" href="./index-style.css">
 
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Site Mode CSS -->
+    <link rel="stylesheet" href="./sitemode.css">
+
   </head>
   <body>
     <header>
@@ -35,6 +43,12 @@
                 <li>
                     <a href="./application.html">Apply</a>
                 </li>
+                <li class="dark-light-box">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i>
+                    </div>
+                </li>
             </ul>
           </nav>
     </header>
@@ -51,7 +65,7 @@
     
 
     <section class="content">
-        <h2 class="container">
+        <h2 class="container" id="learn">
             What You'll Learn
         </h2>
 
@@ -128,5 +142,8 @@
         <p id="copy">Copyright &copy; 2022</p>
     </footer>
 
+
+    <!-- Mode Changing Script-->
+    <script src="./sitemode.js"></script>
   </body>
 </html>

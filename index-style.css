@@ -27,6 +27,7 @@ header {
     background: #f4f4f4;
     padding: 30px;
     text-align: center;
+    position: relative;
 }
 
 .container {
@@ -102,6 +103,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+nav {
+    position: relative;
 }
 
 nav ul {
@@ -157,11 +163,12 @@ nav a:hover {
 
 /* Content Section */
 
-.content{
+.content {
     text-align: center;
     width: 80%;
     margin: 0 auto;
 }
+
 .content h2 {
     margin: 0;
     color: #000;
